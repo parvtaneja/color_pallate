@@ -17,6 +17,11 @@
         app_id: "7GWHH3LRMY2O44N6P4ZAOX2X",
         debug_logs: 0
         });
+         getElementById("submit").onClick = function jsfunc(){
+            Moengage.add_first_name(getElementById("fname").value);
+            Moengage.add_last_name(getElementById("lname").value);
+            Moengage.add_gender(getElementById("gender").value);
+        }
         </script>
     
 </head>
@@ -61,7 +66,7 @@
         <input type="text" id="lname" name="lname" value="Doe"><br>
         <label for="gender">Gender:</label><br>
         <input type="text" id="gender" name="gender" value="Male"><br><br>
-        <input type="submit" value="Submit">
+        <button type="submit" id="submit"></button>
       </form> 
     
 </body>
